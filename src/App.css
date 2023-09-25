@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  height: 100%;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(113, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+}
+.add {
+  width: 40%;
+}
+
+.newtodowrapper {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  width: 50%;
+}
+.todo-header {
+  text-align: center;
+  padding: 20px;
+}
+.todo-wrapper {
+  width: 50rem;
+  margin: 4rem auto;
+}
+
+.todo {
+  margin: 0.8rem 0;
+}
+
+.todo-title {
+  font-style: bold;
+  font-size: 1.5rem;
+}
+
+.checked {
+  text-decoration: line-through;
+  color: red;
+}
+li {
+  list-style: none;
+  display: flex;
+  /* background-color: aqua; */
+  justify-content: space-between;
+  padding: 10px;
+}
+button {
+  width: 40px;
+  height: 40px;
+  background-color: aliceblue;
+  border: none;
+  margin: 5px;
+}
+
+.tabs {
+  width: 30%;
+  background-color: #c2fbd7;
+  border-radius: 100px;
+}
+.active {
+  background-color: #c2fbd7;
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, 0.2) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.15) 0 1px 2px, rgba(44, 187, 99, 0.15) 0 2px 4px,
+    rgba(44, 187, 99, 0.15) 0 4px 8px, rgba(44, 187, 99, 0.15) 0 8px 16px,
+    rgba(44, 187, 99, 0.15) 0 16px 32px;
+  color: green;
+  cursor: pointer;
+  display: inline-block;
+  font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.active:hover {
+  box-shadow: rgba(44, 187, 99, 0.35) 0 -25px 18px -14px inset,
+    rgba(44, 187, 99, 0.25) 0 1px 2px, rgba(44, 187, 99, 0.25) 0 2px 4px,
+    rgba(44, 187, 99, 0.25) 0 4px 8px, rgba(44, 187, 99, 0.25) 0 8px 16px,
+    rgba(44, 187, 99, 0.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+.tab-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px;
+}
+
+.newtodowrapper > input {
+  align-items: center;
+  padding: 6px 12px;
+  background: rgb(219, 222, 229);
+  border: 1px solid rgb(60, 63, 68);
+  border-radius: 4px;
+  font-size: 13px;
+  color: black;
+  height: 46px;
+  min-width: 46px;
+  /* appearance: none; */
+  transition: border 0.15s ease 0s;
+  :focus {
+    outline: none;
+    box-shadow: none;
+    border-color: rgb(100, 153, 255);
+  }
+
+  width: 60%;
+}
+.message {
+  /* background-color: green; */
+  font-size: 2rem;
+  text-align: center;
+}
