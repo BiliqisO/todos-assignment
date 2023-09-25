@@ -60,7 +60,7 @@ function TabComponent() {
           className={`tabs ${activeTab === 0 ? "active" : ""}`}
           onClick={() => handleTabClick(0)}
         >
-          COMPLETED
+          ALL
         </button>
         <button
           className={`tabs ${activeTab === 1 ? "active" : ""}`}
@@ -72,7 +72,7 @@ function TabComponent() {
           className={`tabs ${activeTab === 2 ? "active" : ""}`}
           onClick={() => handleTabClick(2)}
         >
-          ALL
+          COMPLETED
         </button>
       </div>
 
@@ -80,7 +80,7 @@ function TabComponent() {
         {activeTab === 0 && (
           <div>
             {" "}
-            <Completed
+            <Todos
               todos={todos}
               setTodos={setTodos}
             />
@@ -98,7 +98,7 @@ function TabComponent() {
         {activeTab === 2 && (
           <div>
             {" "}
-            <Todos
+            <Completed
               todos={todos}
               setTodos={setTodos}
             />
